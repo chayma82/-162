@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Business Task Manager</h1>
+        
+        <form class="task-form" id="taskForm">
+            <input type="text" class="task-input" id="taskInput" placeholder="Add a new task..." required>
+            <button type="submit" class="add-task-btn">Add Task</button>
+        </form>
+        
+        <div class="task-sections">
+            <div class="task-section">
+                <h2>Pending Tasks</h2>
+                <ul class="task-list" id="pendingTasks">
+                    <li class="no-tasks">No pending tasks</li>
+                </ul>
+            </div>
+            
+            <div class="task-section">
+                <h2>Completed Tasks</h2>
+                <ul class="task-list" id="completedTasks">
+                    <li class="no-tasks">No completed tasks</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
